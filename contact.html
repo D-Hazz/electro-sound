@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Electro-Sound</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" type="image/png" href="assets/img/logo-es.png" />
+
+  <!-- Font Awesome (CDN) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  />
+</head>
+<body class="theme-dark">
+  <header class="topbar">
+    <div class="topbar-container">
+      <a href="index.html" class="brand">
+        <img src="assets/img/logo-es.png" class="brand-logo" alt="Electro-Sound" />
+        <span class="brand-name">
+          <span style="color: #f38b28;">Electro</span>-<span style="color: #aaaaaa;">Sound</span>
+        </span>
+      </a>
+      <nav id="navMenu" class="nav-menu">
+        <a href="index.html" class="nav-link">
+          <i class="fa-solid fa-house" aria-hidden="true"></i>
+          Accueil
+        </a>
+        <a href="about.html" class="nav-link">
+          <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+          À propos
+        </a>
+        <a href="products.html" class="nav-link">
+          <i class="fa-solid fa-guitar" aria-hidden="true"></i>
+          Produits
+        </a>
+        <a href="services.html" class="nav-link">
+          <i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i>
+          Services
+        </a>
+        <a href="contact.html" class="nav-link btn-nav active">
+          <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+          Contact
+        </a>
+      </nav>
+      <button id="navToggle" class="nav-toggle" aria-label="Menu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <h1>
+        <i class="fa-solid fa-message" aria-hidden="true"></i>
+        Contact &amp; devis
+      </h1>
+      <p>
+        Un projet de sonorisation, un besoin spécifique ou une demande de devis&nbsp;?
+        L’équipe Electro-Sound répond dans les meilleurs délais.
+      </p>
+    </section>
+
+    <section class="section">
+      <div class="grid-2">
+        <div class="card">
+          <h2>
+            <i class="fa-solid fa-clipboard-list" aria-hidden="true"></i>
+            Formulaire
+          </h2>
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">
+                <i class="fa-regular fa-user" aria-hidden="true"></i>
+                Nom / Organisation
+              </label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">
+                <i class="fa-solid fa-at" aria-hidden="true"></i>
+                Email / Téléphone
+              </label>
+              <input type="text" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="type">
+                <i class="fa-solid fa-list-check" aria-hidden="true"></i>
+                Type de demande
+              </label>
+              <select id="type" name="type">
+                <option value="devis">Devis matériel</option>
+                <option value="maintenance">Maintenance / réparation</option>
+                <option value="formation">Formation / atelier</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">
+                <i class="fa-regular fa-comment-dots" aria-hidden="true"></i>
+                Message
+              </label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary">
+              <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+              Envoyer
+            </button>
+            <p class="form-status" id="formStatus"></p>
+          </form>
+        </div>
+
+        <div class="card">
+          <h2>
+            <i class="fa-solid fa-address-book" aria-hidden="true"></i>
+            Coordonnées
+          </h2>
+          <p>
+            <strong>
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              Localisation
+            </strong>
+            &nbsp;: Goma, RDC
+          </p>
+          <p>
+            <strong>
+              <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+              Email
+            </strong>
+            &nbsp;: hakizimanazidane@gmail.com
+          </p>
+          <p>
+            <strong>
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              Téléphone
+            </strong>
+            &nbsp;: +243 971 734 080
+          </p>
+          <p>
+            <strong>
+              <i class="fa-regular fa-clock" aria-hidden="true"></i>
+              Horaires
+            </strong>
+            &nbsp;: Lun–Sam, 9h–18h
+          </p>
+          <p>
+            Possibilité de rendez-vous sur site (studios, églises, radios) pour
+            une évaluation technique et un devis détaillé.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>© <span id="year"></span> Electro-Sound · Goma, RDC</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

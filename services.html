@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | Electro-Sound</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" type="image/png" href="assets/img/logo-es.png" />
+
+  <!-- Font Awesome (CDN) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  />
+</head>
+<body class="theme-dark">
+  <header class="topbar">
+    <div class="topbar-container">
+      <a href="index.html" class="brand">
+        <img src="assets/img/logo-es.png" class="brand-logo" alt="Electro-Sound" />
+        <span class="brand-name">
+          <span style="color: #f38b28;">Electro</span>-<span style="color: #aaaaaa;">Sound</span>
+        </span>
+      </a>
+      <nav id="navMenu" class="nav-menu">
+        <a href="index.html" class="nav-link">
+          <i class="fa-solid fa-house" aria-hidden="true"></i>
+          Accueil
+        </a>
+        <a href="about.html" class="nav-link">
+          <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+          À propos
+        </a>
+        <a href="products.html" class="nav-link">
+          <i class="fa-solid fa-guitar" aria-hidden="true"></i>
+          Produits
+        </a>
+        <a href="services.html" class="nav-link active">
+          <i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i>
+          Services
+        </a>
+        <a href="contact.html" class="nav-link btn-nav">
+          <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+          Contact
+        </a>
+      </nav>
+      <button id="navToggle" class="nav-toggle" aria-label="Menu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Bannière avec titre devant l'image -->
+    <section class="products-hero-banner">
+      <div class="products-hero-media">
+        <img src="assets/img/devices/service-banner.png" alt="Bannière produits Electro-Sound">
+        <div class="products-hero-overlay-layer"></div>
+      </div>
+      <div class="products-hero-content">
+        <h1>
+          <i class="fa-solid fa-sliders" aria-hidden="true"></i>
+          Services <span style="color: #f38b28;">Electro-Sound</span>
+        </h1>
+        <p>
+          Au-delà du matériel, Electro-Sound accompagne les clients sur le terrain&nbsp;:
+          maintenance, configuration et formation.
+        </p>
+      </div>
+    </section>
+
+
+    <section class="section">
+      <div class="grid-3">
+        <div class="card">
+          <h2>
+            <i class="fa-solid fa-wrench" aria-hidden="true"></i>
+            Maintenance &amp; réparation
+          </h2>
+          <p>
+            Diagnostic et réparation de modules Electro-Sound, remplacement de
+            composants et optimisation des installations existantes.
+          </p>
+        </div>
+        <div class="card">
+          <h2>
+            <i class="fa-solid fa-sliders" aria-hidden="true"></i>
+            Configuration audio
+          </h2>
+          <p>
+            Aide à la mise en place de chaînes audio pour studios, églises et
+            événements&nbsp;: placement, niveaux et configuration pratique.
+          </p>
+        </div>
+        <div class="card">
+          <h2>
+            <i class="fa-solid fa-chalkboard-user" aria-hidden="true"></i>
+            Formations
+          </h2>
+          <p>
+            Sessions de prise en main des amplis, pédales et synthés, bonnes
+            pratiques d’utilisation et bases de l’audio.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <h2>
+          <i class="fa-solid fa-road" aria-hidden="true"></i>
+          Approche terrain
+        </h2>
+        <p>
+          Démonstrations directes chez les studios, églises et radios de Goma
+          pour valider le marché et améliorer les produits.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>© <span id="year"></span> Electro-Sound · Goma, RDC</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
