@@ -29,3 +29,40 @@ if (contactForm && formStatus) {
     }, 800);
   });
 }
+
+// HERO background 3D slider
+const heroSlides = document.querySelectorAll(".hero-bg-slide");
+
+if (heroSlides.length > 0) {
+  let currentIndex = 0;
+  const slideInterval = 6000; // 6s
+
+  // Init
+  heroSlides[currentIndex].classList.add("is-active");
+
+  const goToSlide = (nextIndex) => {
+    const currentSlide = heroSlides[currentIndex];
+    const nextSlide = heroSlides[nextIndex];
+
+    // retire anciens états
+    heroSlides.forEach((slide) => {
+      slide.classList.remove("is-leaving-left", "is-leaving-right");
+    });
+
+    // animation de sortie
+    currentSlide.classList.remove("is-active");
+    currentSlide.classList.add("is-leaving-left");
+
+    // petit délai pour permettre la transition (optionnel)
+    requestAnimationFrame(() => {
+      nextSlide.classList.add("is-active");
+    });
+
+    currentIndex = nextIndex;
+  };
+
+  setInterval(() => {
+    const nextIndex = (currentIndex + 1) % heroSlides.length;
+    goToSlide(nextIndex);
+  }, slideInterval);
+}
